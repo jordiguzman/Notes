@@ -1,0 +1,24 @@
+<resources>
+    <string name="app_name">Notas</string>
+    <string name="navigation_drawer_open" translatable="false">Open navigation drawer</string>
+    <string name="navigation_drawer_close" translatable="false">Close navigation drawer</string>
+    <string name="nav_header_desc" translatable="false">Navigation header</string>
+    <string name="action_settings">Ajustes</string>
+
+    <string name="menu_home" translatable="false">Home</string>
+    <string name="escribe_tu_nota">Escribe tu nota</string>
+    <string name="titulo">Título</string>
+    <string name="text_save_note">Has de poner el título y el texto</string>
+    <string name="text_save_success">Nota creada con éxito</string>
+    <string name="image_cardview">Imagen CardView</string>
+    <string name="delete_note">Borrar Nota</string>
+    <string name="contenido">Contenido</string>
+    <string name="boton_color">Botón color</string>
+    <string name="logo">logo</string>
+    <string name="toca_para_empezar">Toca para empezar</string>
+    <string name="etiquetas">Etiquetas</string>
+    <string name="colores">Colores</string>
+    <string name="ajustes">Ajustes</string>
+    <string name="idiomas">Idiomas</string>
+    <string name="info">Info</string>
+</resources>

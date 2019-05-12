@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Notes</string>
+    <string name="action_settings">Settings</string>
+    <string name="ajustes">Settings</string>
+    <string name="boton_color">Color Button</string>
+    <string name="colores">Colors</string>
+    <string name="contenido">Content</string>
+    <string name="delete_note">Delete Note</string>
+    <string name="escribe_tu_nota">Write your note</string>
+    <string name="etiquetas">Tags</string>
+    <string name="idiomas">Languages</string>
+    <string name="image_cardview">CardView Image</string>
+    <string name="info">Info</string>
+    <string name="logo">logo</string>
+    <string name="text_save_note">You have to put the title and the text</string>
+    <string name="text_save_success">Note created successfully</string>
+    <string name="titulo">Title</string>
+    <string name="toca_para_empezar">Tap to begin</string>
+</resources>
