@@ -54,6 +54,10 @@ class MainActivity : AppCompatActivity(), NavigationView.OnNavigationItemSelecte
 
         toolbar.title = getString(R.string.app_name)
 
+        /**
+         * A QUE NO VA
+         */
+
 
         dbHandler = NotesDataBaseHandler(this)
         dbHandlerTags = TagsDataBaseHandler(this)
