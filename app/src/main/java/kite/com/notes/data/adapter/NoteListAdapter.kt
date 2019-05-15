@@ -96,6 +96,7 @@ class NoteListAdapter(private val list: ArrayList<Note>,
             intent.putExtra("id", nota.idNota)
             intent.putExtra("fromCreate", true)
             intent.putExtra("titulo", nota.tituloNota)
+            intent.putExtra("color", nota.noteColor)
             mContext.startActivity(intent)
         }
 

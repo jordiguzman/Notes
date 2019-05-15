@@ -21,6 +21,7 @@ class NotesDataBaseHandler(context: Context) : SQLiteOpenHelper(
         val CREATE_NOTE_TABLE = "CREATE TABLE " + TABLE_NAME + "(" + KEY_ID + " INTEGER PRIMARY KEY," +
                 KEY_TITULO + " TEXT," +
                 KEY_CONTENT + " TEXT," +
+                KEY_COLOR + " INT," +
                 KEY_DATE + " LONG" + ")"
 
         db?.execSQL(CREATE_NOTE_TABLE)
@@ -43,6 +44,7 @@ class NotesDataBaseHandler(context: Context) : SQLiteOpenHelper(
         values.put(KEY_TITULO, note.tituloNota)
         values.put(KEY_CONTENT, note.contentNota)
         values.put(KEY_DATE, System.currentTimeMillis())
+        values.put(KEY_COLOR, note.noteColor)
 
         db.insert(TABLE_NAME, null, values)
         db.close()
@@ -54,7 +56,7 @@ class NotesDataBaseHandler(context: Context) : SQLiteOpenHelper(
         val cursor: Cursor = db.query(
             TABLE_NAME, arrayOf(
                 KEY_ID,
-                KEY_TITULO, KEY_CONTENT, KEY_DATE
+                KEY_TITULO, KEY_CONTENT, KEY_DATE, KEY_COLOR
             ), "$KEY_ID=?", arrayOf(id.toString()),
             null, null, null, null
         )
@@ -66,6 +68,7 @@ class NotesDataBaseHandler(context: Context) : SQLiteOpenHelper(
             note.contentNota = cursor1.getString(cursor1.getColumnIndex(KEY_CONTENT))
             note.dateNota = cursor1.getLong(cursor1.getColumnIndex(KEY_DATE))
             note.idNota = cursor.getInt(cursor1.getColumnIndex(KEY_ID))
+            note.noteColor = cursor.getInt(cursor1.getColumnIndex(KEY_COLOR))
 
 
             return note
@@ -93,6 +96,7 @@ class NotesDataBaseHandler(context: Context) : SQLiteOpenHelper(
                     note.tituloNota = cursor1.getString(cursor1.getColumnIndex(KEY_TITULO))
                     note.contentNota = cursor1.getString(cursor1.getColumnIndex(KEY_CONTENT))
                     note.dateNota = cursor1.getLong(cursor1.getColumnIndex(KEY_DATE))
+                    note.noteColor = cursor1.getInt(cursor1.getColumnIndex(KEY_COLOR))
 
                     list.add(note)
                 } while (cursor1.moveToNext())
@@ -108,6 +112,7 @@ class NotesDataBaseHandler(context: Context) : SQLiteOpenHelper(
         values.put(KEY_TITULO, note.tituloNota)
         values.put(KEY_CONTENT, note.contentNota)
         values.put(KEY_DATE, System.currentTimeMillis())
+        values.put(KEY_COLOR, note.noteColor)
 
         //Update a row
         return db.update(TABLE_NAME, values, "$KEY_ID=?", arrayOf(id.toString()))

@@ -1,6 +1,7 @@
 package kite.com.notes
 
 
+import android.content.DialogInterface
 import android.content.Intent
 import android.content.SharedPreferences
 import android.content.res.Configuration
@@ -54,9 +55,7 @@ class MainActivity : AppCompatActivity(), NavigationView.OnNavigationItemSelecte
 
         toolbar.title = getString(R.string.app_name)
 
-        /**
-         * A QUE NO VA
-         */
+
 
 
         dbHandler = NotesDataBaseHandler(this)
@@ -127,6 +126,7 @@ class MainActivity : AppCompatActivity(), NavigationView.OnNavigationItemSelecte
             note.contentNota = c.contentNota
             note.dateNota = c.dateNota
             note.idNota = c.idNota
+            note.noteColor = c.noteColor
             noteListItems!!.add(note)
 
         }
@@ -180,6 +180,7 @@ class MainActivity : AppCompatActivity(), NavigationView.OnNavigationItemSelecte
         startActivity(intent)
 
     }
+
 
     private fun alertLanguage() {
         val idiomas = listOf("Español", "English")

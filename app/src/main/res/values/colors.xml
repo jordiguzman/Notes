@@ -12,5 +12,41 @@
     <color name="icons">#FFFFFF</color>
     <color name="divider">#BDBDBD</color>
 
+    <!-- COLORES NOTAS -->
+    <color name="nota_blue">#448aff</color>
+    <color name="nota_yellow">#ffeb3b</color>
+    <color name="nota_pink">#ff4081</color>
+    <color name="nota_red">#f44336</color>
+    <color name="nota_green">#4caf50</color>
+    <color name="nota_grey">#607d8b</color>
+    <color name="nota_init">#FFFFFF</color>
+
+    <color name="nota_blue_pale">#448ABE</color>
+    <color name="nota_yellow_pale">#FFF8C9</color>
+    <color name="nota_pink_pale">#FF71A2</color>
+    <color name="nota_red_pale">#FC827A</color>
+    <color name="nota_green_pale">#72AC73</color>
+    <color name="nota_grey_pale">#74818B</color>
+
+
+    <integer-array name="colores_notas">
+        <item>@color/nota_init</item>
+        <item>@color/nota_blue</item>
+        <item>@color/nota_yellow</item>
+        <item>@color/nota_pink</item>
+        <item>@color/nota_red</item>
+        <item>@color/nota_green</item>
+        <item>@color/nota_grey</item>
+    </integer-array>
+    <integer-array name="colores_notas_pale">
+        <item>@color/nota_blue_pale</item>
+        <item>@color/nota_yellow_pale</item>
+        <item>@color/nota_pink_pale</item>
+        <item>@color/nota_red_pale</item>
+        <item>@color/nota_green_pale</item>
+        <item>@color/nota_grey_pale</item>
+    </integer-array>
+
+
 </resources>
 

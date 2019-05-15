@@ -1,6 +1,6 @@
 package kite.com.notes.model
 
-import java.util.ArrayList
+
 
 
 class Note {
@@ -9,6 +9,7 @@ class Note {
     var tituloNota: String? = null
     var contentNota: String? = null
     var dateNota: Long? = null
+    var noteColor: Int? = null
 
 
 
